@@ -13,26 +13,26 @@
         // ## Array Cardio Day 2
 
         const people = [{
-                name: 'Wes',
+                name: 'Bob',
                 year: 1988
             },
             {
-                name: 'Kait',
+                name: 'Alice',
                 year: 1986
             },
             {
-                name: 'Irv',
+                name: 'Steve',
                 year: 1970
             },
             {
-                name: 'Lux',
-                year: 2015
+                name: 'Jane',
+                year: 1994
             }
         ];
 
         const comments = [{
                 text: 'Love this!',
-                id: 523423
+                id: 123456
             },
             {
                 text: 'Super good',
@@ -72,13 +72,13 @@
 
         // Array.prototype.every() // is everyone 19 or older?
 
-        const allAdults = people.every(person => {
-            const currentYear = (new Date()).getFullYear();
-            return currentYear - person.year >= 19;
+        //const allAdults = people.every(person => {
+            //const currentYear = (new Date()).getFullYear();
+            //return currentYear - person.year >= 19;
 
-        });
+        //});
 
-        console.log({allAdults});
+        //console.log({allAdults});
 
 
         // Array.prototype.find() like filter but returns first item it finds
@@ -110,7 +110,7 @@
           //comments.splice(index, 1);
 
           const newComments = [
-            ...comments.slice(0, index), // ... is spread opeartor
+            ...comments.slice(0, index), // ... is spread opeartor adding and extra comment for funsies
             ...comments.slice(index + 1, index),
           ]
 
